@@ -1,0 +1,43 @@
+<!-- Name: Tashia Boddu
+Project Created: October 25th 2022
+Purpose of Project: Understand and create a dynamic table that
+interacts with the user. Learn JS as well -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bananas.css"/>
+  <title>Interactive Table</title>
+</head>
+<body>
+  <h1>Dynamic Multiplication Table</h1>
+  <h2>Please Enter The Table Ranges</h2>
+
+  <!-- create form that allows user to input values -->
+  <div class="form_input">
+    <!-- activate createTable() func in JS-->
+    <form onclick="createTable()">
+      <label for="min_col">Minimum Column Value</label><br>
+      <input type="text" id="mincol" name="mincol"><br>
+
+      <label for="max_col">Maximum Column Value</label><br>
+      <input type="text" id="maxcol" name="maxcol"><br>
+
+      <label for="min_row">Minimum Row Value</label><br>
+      <input type="text" id="minrow" name="minrow"><br>
+
+      <label for="max_row">Maximum Row Value</label><br>
+      <input type="text" id="maxrow" name="maxrow"><br>
+      <!-- activate errorMsg func in JS-->
+      <input type="submit" value="Create Table" onclick="errorMsg()" >
+    </form>
+  </div>
+
+  <!-- create table container -->
+  <div id="Table"></div>
+  <script src="js/apples.js"></script>
+</body>
+</html>
